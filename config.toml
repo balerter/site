@@ -1,4 +1,4 @@
-baseURL = "http://balerter.com/"
+baseURL = "https://balerter.github.io"
 languageCode = "en-us"
 title = "Balerter - a scipts based alerting system"
 theme = "hugo-theme-learn"
