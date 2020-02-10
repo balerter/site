@@ -1,0 +1,18 @@
+baseURL = "http://balerter.com/"
+languageCode = "en-us"
+title = "Balerter - a scipts based alerting system"
+theme = "hugo-theme-learn"
+
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir= true
+
+[Languages]
+[Languages.en]
+title = "Documentation for Balerter"
+weight = 1
+languageName = "English"
+
+[Languages.ru]
+title = "Документация по Balerter"
+weight = 2
+languageName = "Русский"
