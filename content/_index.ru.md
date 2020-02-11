@@ -25,3 +25,4 @@ Balerter - система оповещений, основанная на скр
     - [Alert](core/alert)
 - [Скрипты](scripts)
     - [Основы](scripts/basics)
+    - [Мета-теги](scripts/meta-tags)
