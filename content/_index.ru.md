@@ -26,6 +26,7 @@ Balerter - система оповещений, основанная на скр
     - [Log](core/log)
     - [KV](core/kv) (Key/Value)
     - [Alert](core/alert)
+    - [DataSoruce](core/datasource)
 - [Скрипты](scripts)
     - [Основы](scripts/basics)
     - [Мета-теги](scripts/meta-tags)
