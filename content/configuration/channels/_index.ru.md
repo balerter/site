@@ -2,9 +2,10 @@
 title: "Раздел Channels"
 date: 2020-02-04T16:48:31+03:00
 draft: false
+weight: 4
 ---
 
-В секции `scripts.channels` описываются каналы доставку уведомлений
+В секции `scripts.channels` описываются каналы доставки уведомлений
 
 - [slack](slack)
 - [telegram](telegram)

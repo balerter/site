@@ -5,4 +5,68 @@ draft: false
 weight: 1
 ---
 
-todo
+Модуль `datasource.clickhouse` позволяет получать данные из базы данных [**Clickhouse**](https://clickhouse.tech)
+
+Подключение:
+```
+local db = require('datasource.clickhouse.<NAME_FROM_CONFIG>')
+```
+
+### Методы
+
+#### `query('<SQL QUERY>') result, error`
+
+Выполнение запроса и получение результата. В случае ошибки, вторая возвращаемая переменная будет содержать текст ошибки
+
+Формат результата:
+
+```
+{
+    -- row 1
+    {
+        <FIELD1_NAME> = <FIELD1_VALUE>,
+        <FIELD2_NAME> = <FIELD2_VALUE>,
+        ...
+    },
+    -- row 2
+    {
+        <FIELD1_NAME> = <FIELD1_VALUE>,
+        <FIELD2_NAME> = <FIELD2_VALUE>,
+        ...
+    },
+    -- row N
+    ...
+}
+``` 
+
+Например:
+
+```
+local db = require('datasource.clickhouse.dev')
+
+local res, err = db.query("SELECT table, sum(bytes) AS size FROM system.parts WHERE active AND database = 'system' GROUP BY table")
+if err ~= nil then
+    return
+end
+
+-- res будет содержать примерно следующие данные
+{
+    {
+        table = 'query_thread_log',
+        size = 943846427
+    },
+    {
+        table = 'metric_log',
+        size = 656645852
+    },
+    {
+        table = 'query_log',
+        size = 997251520
+    },
+    {
+        table = 'part_log',
+        size = 2037035728
+    }
+}
+
+```
