@@ -1,0 +1,28 @@
+---
+title: "Раздел Channels"
+date: 2020-02-04T16:48:31+03:00
+draft: false
+---
+
+В секции `scripts.channels` описываются каналы доставку уведомлений
+
+- [slack](slack)
+- [telegram](telegram)
+
+```
+channels:
+  slack:
+    - name: slack-notification
+      token: SLACK-APPLICATION-TOKEN
+      channel: notification
+  telegram:
+    - name: tg1
+      token: TELEGRAM-BOT-TOKEN
+      chat_id: 100500
+      proxy:
+        address: 10.20.30.40:5060
+        auth:
+          username: user
+          password: secret
+```
+

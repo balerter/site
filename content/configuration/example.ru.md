@@ -57,9 +57,15 @@ channels:
     - name: slack-notification
       token: SLACK-APPLICATION-TOKEN
       channel: notification
-      prefixes:
-        error: ':sos: '
-        success: ':eight_spoked_asterisk: '
+  telegram:
+    - name: tg1
+      token: TELEGRAM-BOT-TOKEN
+      chat_id: 100500
+      proxy:
+        address: 10.20.30.40:5060
+        auth:
+          username: user
+          password: secret
 
 global:
   send_start_notification:
