@@ -1,12 +1,12 @@
 +++
 title = "Скрипты"
 date = 2020-02-04T16:08:54+03:00
-weight = 4
+weight = 5
 chapter = true
-pre = "<b>IV. </b>"
+pre = "<b>V. </b>"
 +++
 
-### Часть IV
+### Часть V
 
 # Скрипты
 
