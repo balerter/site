@@ -44,14 +44,14 @@ local alert = require('alert')
 Это Lua-table со следующими возможными полями:
 ```
 {
-    queit = <BOOL>,
+    quiet = <BOOL>,
     repeat = <UINT>,
     channels = <STRINGS>,
     fields = <STRINGS>
 }
 
 {
-    queit = true,
+    quiet = true,
     repeat = 5,
     channels = {'channal-name-1', 'channel-name-2', ...},
     fields = {'field1', 'field2', ... }
