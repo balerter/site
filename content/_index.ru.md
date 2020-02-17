@@ -36,6 +36,7 @@ Balerter - система оповещений, основанная на скр
 - [Скрипты](scripts)
     - [Основы](scripts/basics)
     - [Мета-теги](scripts/meta-tags)
+- [API](api)
 - [Руководства](manuals)
     - [Подключение Slack](manuals/slack)
     - [Подключение Telegram](manuals/telegram)
