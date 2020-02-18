@@ -12,6 +12,7 @@ weight: 1
 - [scripts](../scripts) - описание источников скриптов
 - [datasources](../datasources) - описание источников данных
 - [channels](../channels) - описание каналов отправки уведомлений
+- [storages](../storages) - описание хранилищ для загрузки данных. например, изображений
 - [global](../global) - глобальные настройки
 
 Пример:
@@ -66,6 +67,15 @@ channels:
         auth:
           username: user
           password: secret
+
+storages:
+  s3:
+    - name: dev
+      region: us-east1
+      key: SOME_KEY
+      secret: SOME_SECRET
+      endpoint: SOME_ENDPOINT
+      bucket: SOME_BUCKET
 
 global:
   send_start_notification:

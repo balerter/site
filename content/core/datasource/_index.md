@@ -2,7 +2,7 @@
 title: "Datasource"
 date: 2020-02-04T19:23:28+03:00
 draft: false
-weight: 5
+weight: 6
 ---
 
 Модуль `datasource` обеспечивает доступ к источникам данных. 
