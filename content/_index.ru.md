@@ -26,6 +26,7 @@ Balerter - система оповещений, основанная на скр
 - [Модули ядра](core)
     - [Log](core/log)
     - [KV](core/kv) (Key/Value)
+    - [Chart](core/chart)
     - [Alert](core/alert)
     - [DataSoruce](core/datasource)
         - [Clickhouse](core/datasource/clickhouse)
