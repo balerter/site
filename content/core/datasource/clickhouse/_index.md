@@ -70,3 +70,14 @@ end
 }
 
 ```
+
+### Поддерживаемые типы данных
+
+В данный момент при разборе ответа Clickhouse поддерживаются следующие типы данных:
+- UInt8, UInt16, UInt32, UInt64
+- Int8, Int16, Int32, Int64
+- Float32, Float64
+- String
+- UUID
+- Date
+- DateTime
