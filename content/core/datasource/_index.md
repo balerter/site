@@ -50,6 +50,37 @@ local prom1 = require('datasource.prometheus.prom1')
 ```
 
 Использование каждого типа источника данных смотрите далее
-- [Clickhous](clickhouse)
+- [Clickhouse](clickhouse)
 - [Postgres](postgres)
 - [Prometheus](prometheus)
+
+### Null поля в источниках Clickhouse и Postgres
+
+Если в результате запроса вернулось значение `null` для какого-либо поля, то обратите внимание, что при итерации по результатам запроса в Lua-скрипте с помощью `pairs`, это поле вы не получите. Поведение будет аналогично тому, как если обратиться к несуществующему полю. Будет возвращен `nil`
+
+Пример:
+
+Поле token может вернуть строку или null.
+В этом случае, если в строке поле token было null, то эта строка даже не будет выведена. Это особенность реализации функции pairs.
+
+```
+res = pg.query('SELECT name, token FROM users')
+
+
+for _, row in pairs(res) do
+    for columnName, columnValue in pairs(row) do
+        print(columnName .. ' = ' .. columnValue)
+    end
+end
+```
+
+Вы можете напрямую проверить содержимое поля `token` - в этом случае вы получите `nil`
+
+```
+res = pg.query('SELECT name, token FROM users')
+
+for _, row in pairs(res) do
+    print(row.name)
+    print(row.token) -- row.token равняется nil
+end
+```
