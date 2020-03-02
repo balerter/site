@@ -39,6 +39,7 @@ Balerter - система оповещений, основанная на скр
 - [Lua Модули](luamodules)
     - [О lua модулях](luamodules/about)
     - [Создание lua модуля](luamodules/new)
+    - [Предустановленные модули](luamodules/presets)
 - [Скрипты](scripts)
     - [Основы](scripts/basics)
     - [Мета-теги](scripts/meta-tags)
