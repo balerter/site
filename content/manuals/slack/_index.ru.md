@@ -2,7 +2,7 @@
 title: "Подключение Slack"
 date: 2020-02-04T19:23:28+03:00
 draft: false
-weight: 1
+weight: 2
 ---
 
 1. Создаем приложение приложение на странице `https://api.slack.com/apps?new_app=1`
