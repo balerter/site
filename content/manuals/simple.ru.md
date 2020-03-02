@@ -24,7 +24,7 @@ scripts:
 datasources:
   prometheus:
     - name: prom1
-      url: domain.com
+      url: 127.0.0.1:9090
 channels:
   telegram:
     - name: tg1
@@ -34,4 +34,64 @@ channels:
 
 ```
 
-todo
+В кофиге мы указали 
+- скрипты будем брать в папке `/opt/scripts` (файлы отбирать по маске *.lua)
+- источник данных с именем `prom1` имеет тип `Prometheus` и будет получать данные с адреса `127.0.0.1:9090`
+- канал `tg1` имеет тип `Telegram` - туда будут отправляться сообщения
+
+> подробнее о том, как подключить Telegram -  можно почитать [тут](../telegram)
+
+### Скрипт
+
+Создадим файл `/opt/scripts/script.lua` со следующим содержимым
+
+```
+-- @interval 2m
+
+local prom = require('datasource.prometheus.prom1')
+local h = require('h')
+
+res = prom.query('sum(go_memstats_heap_objects)')
+
+h.printTable(res)
+```
+
+С помощью мета-тега `@interval` мы указали, что скрипт должен исполняться каждые 2 минуты
+
+И на последней строке мы воспользуемся предустановленным модулем `h` (helper) и функцией `printTable` чтобы вывести в консоль результат запроса
+
+Мы увидим примерно следующее:
+
+```
+{
+    1 = {
+        metrics = {
+        }
+        value = {
+            timestamp = 1583147803
+            value = 1006483950
+        }
+    }
+}
+```
+
+Доработаем скрипт до финального вида. Подключим модуль `alert` и допишем логику управления алертом
+
+```
+-- @interval 120s
+
+local prom = require('datasource.prometheus.prom1')
+local alert = require('alert')
+
+res = prom.query('sum(go_memstats_heap_objects)')
+
+if res[1].value.value > 1000000000 then
+    alert.error('alert1', 'go_memstats_heap_objects greater than 1e9 :(')
+else
+    alert.success('alert1', 'go_memstats_heap_objects less than 1e9 :)')
+end
+```
+
+Готово.
+
+Другие примеры вы можете посмотреть в соотвествующем [разделе](../../examples)
