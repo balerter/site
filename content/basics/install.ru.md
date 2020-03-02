@@ -20,8 +20,6 @@ docker run \
 
 Клонируем репозиторий на локальную машину и запускаем Balerter, указав конфигурационный файл
 
-> Требуется Go версии 1.13 и выше
-
 ```
 git clone https://github.com/balerter/balerter.git
 cd balerter
