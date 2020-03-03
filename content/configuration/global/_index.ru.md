@@ -15,6 +15,7 @@ global:
     - slack-notification
   api:
     address: 127.0.0.1:2000
+    metrics: true
 ```
 
 ### `send_start_notification` 
@@ -31,3 +32,5 @@ global:
 
 - `address` (по умолчанию `127.0.0.1:2000`) - адрес, на котором будет слушать HTTP API сервер
 
+- `metrics` (boolean, по умолчанию `false`) - если `True`, то по адресу `<API_ADDRESS>/metrics` будут доступны Prometheus метрики
+  

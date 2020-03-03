@@ -50,3 +50,4 @@ Balerter - система оповещений, основанная на скр
     - [Подключение Telegram](manuals/telegram)
 - [Примеры](examples)
     - [Нагрузка на CPU](examples/01)
+    - [Количество горутин (с графиком)](examples/02)
