@@ -11,7 +11,7 @@ Balerter - система оповещений, основанная на скр
 
 - [Основы](basics)
     - [О Balerter](basics/about)
-    - [Установка](basics/installation)
+    - [Установка](basics/install)
 - [Конфигурация](configuration)
     - [Источники скриптов](configuration/scripts)
         - [Folder](configuration/scripts/folder)

@@ -7,6 +7,8 @@ weight: 2
 
 ## Докер
 
+Официальный образ: [https://hub.docker.com/r/balerter/balerter](https://hub.docker.com/r/balerter/balerter)
+
 Для простейшего запуска Balerter вам требуется передать ему конфигурационный файл
 
 ```
@@ -19,6 +21,8 @@ docker run \
 ## Исходный код
 
 Клонируем репозиторий на локальную машину и запускаем Balerter, указав конфигурационный файл
+
+> Требуется Go версии 1.13 или выше
 
 ```
 git clone https://github.com/balerter/balerter.git
