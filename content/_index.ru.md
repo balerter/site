@@ -22,6 +22,7 @@ Balerter - система оповещений, основанная на скр
     - [Каналы](configuration/channels)
         - [Slack](configuration/channels/slack)
         - [Telegram](configuration/channels/telegram)
+        - [Syslog](configuration/channels/syslog)
     - [Хранилища](configuration/storages)
         - [S3](configuration/storages/s3)
     - [Глобальные](configuration/global)

@@ -67,6 +67,12 @@ channels:
         auth:
           username: user
           password: secret
+  syslog:
+    - name: default
+      tag: balerter
+      network: tcp
+      address: 127.0.0.1:10515
+      priority: 'EMERG|DAEMON'
 
 storages:
   s3:
