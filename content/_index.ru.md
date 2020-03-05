@@ -38,6 +38,7 @@ Balerter - система оповещений, основанная на скр
         - [Clickhouse](core/datasource/clickhouse)
         - [Postgres](core/datasource/postgres)
         - [Prometheus](core/datasource/prometheus)
+        - [MySQL](core/datasource/mysql)
 - [Lua Модули](luamodules)
     - [О lua модулях](luamodules/about)
     - [Создание lua модуля](luamodules/new)

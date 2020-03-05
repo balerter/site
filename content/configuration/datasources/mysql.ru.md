@@ -35,9 +35,3 @@ local ds = require('datasource.postgres.mysql1')
 
 > В описании [используемой библиотеки](https://github.com/go-sql-driver/mysql) можно посмотреть подробнее про построение DSN
 
-
-## Информация
-
-На данный момент не поддерживаются поля GEOMETRY, ENUM
-
-Если вам необходима их поддержка, создайте [issue на github](https://github.com/balerter/balerter/issues)

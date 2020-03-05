@@ -41,6 +41,7 @@ Balerter is a Scripts Bases Alerting System
         - [~~Clickhouse~~](core/datasource/clickhouse)
         - [~~Postgres~~](core/datasource/postgres)
         - [~~Prometheus~~](core/datasource/prometheus)
+        - [~~MySQL~~](core/datasource/mysql)
 - [~~Lua Modules~~](luamodules)
     - [~~About~~](luamodules/about)
     - [~~Crate a lua module~~](luamodules/new)

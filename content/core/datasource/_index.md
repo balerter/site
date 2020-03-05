@@ -53,8 +53,9 @@ local prom1 = require('datasource.prometheus.prom1')
 - [Clickhouse](clickhouse)
 - [Postgres](postgres)
 - [Prometheus](prometheus)
+- [MySQL](mysql)
 
-### Null поля в источниках Clickhouse и Postgres
+### Null поля в источниках Clickhouse, Postgres, MySQL
 
 Если в результате запроса вернулось значение `null` для какого-либо поля, то обратите внимание, что при итерации по результатам запроса в Lua-скрипте с помощью `pairs`, это поле вы не получите. Поведение будет аналогично тому, как если обратиться к несуществующему полю. Будет возвращен `nil`
 

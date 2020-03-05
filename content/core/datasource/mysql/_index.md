@@ -1,16 +1,16 @@
 ---
-title: "Postgres"
+title: "MySQL"
 date: 2020-02-04T19:23:28+03:00
 draft: false
-weight: 2
+weight: 4
 ---
 
 
-Модуль `datasource.postgres` позволяет получать данные из базы данных **Postgres**
+Модуль `datasource.mysql` позволяет получать данные из базы данных **MySQL**
 
 Подключение:
 ```
-local db = require('datasource.postgres.<NAME_FROM_CONFIG>')
+local db = require('datasource.myqsl.<NAME_FROM_CONFIG>')
 ```
 
 ### Методы
@@ -44,7 +44,7 @@ local db = require('datasource.postgres.<NAME_FROM_CONFIG>')
 Допустим, у нас есть таблица `users`, которая имеет колонки `id` и `name`
 
 ```
-local db = require('datasource.postgres.dev')
+local db = require('datasource.mysql.dev')
 
 local res, err = db.query("SELECT id, name FROM users")
 if err ~= nil then
@@ -69,3 +69,8 @@ end
 
 ```
 
+## Поддержка типов полей
+
+На данный момент не поддерживаются поля GEOMETRY, ENUM, BIT
+
+Если вам необходима их поддержка, создайте [issue на github](https://github.com/balerter/balerter/issues)
