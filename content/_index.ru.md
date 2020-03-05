@@ -19,6 +19,7 @@ Balerter - система оповещений, основанная на скр
         - [Clickhouse](configuration/datasources/clickhouse)
         - [Prometheus](configuration/datasources/prometheus)
         - [Postgres](configuration/datasources/postgres)
+        - [MySQL](configuration/datasources/mysql)
     - [Каналы](configuration/channels)
         - [Slack](configuration/channels/slack)
         - [Telegram](configuration/channels/telegram)

@@ -10,6 +10,7 @@ weight: 3
 - [clickhouse](clickhouse) Clickhouse
 - [prometheus](prometheus) Prometheus
 - [postgres](postgres) Postgres
+- [mysql](mysql) MySQL
 
 ```
 datasources:
@@ -38,5 +39,9 @@ datasources:
       database: database
       ssl_mode: verify-full
       ssl_cert_path: /path/to/cert.crt
+
+  mysql:
+    - name: mysql1
+      dsn: user:secret@tcp(127.0.0.1:3306)/database
 ```
 

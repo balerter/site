@@ -23,6 +23,7 @@ Balerter is a Scripts Bases Alerting System
         - [~~Clickhouse~~](configuration/datasources/clickhouse)
         - [~~Prometheus~~](configuration/datasources/prometheus)
         - [~~Postgres~~](configuration/datasources/postgres)
+        - [~~MySQL~~](configuration/datasources/mysql)
     - [~~Channels~~](configuration/channels)
         - [~~Slack~~](configuration/channels/slack)
         - [~~Telegram~~](configuration/channels/telegram)
