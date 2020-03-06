@@ -1,0 +1,36 @@
+---
+title: "Global"
+date: 2020-02-04T17:06:21+03:00
+draft: false
+weight: 6
+---
+
+In the `global` section describes common settings
+
+```
+global:
+  send_start_notification:
+    - slack-notification
+  send_stop_notification:
+    - slack-notification
+  api:
+    address: 127.0.0.1:2000
+    metrics: true
+```
+
+### `send_start_notification` 
+
+Channels list, which will be send notification about application **start**. If omit, message will not be send.
+
+### `send_stop_notification` 
+
+Channels list, which will be send notification about application **stop**. If omit, message will not be send.
+
+### `api`
+
+HTTP API server settings
+
+- `address` (by default `127.0.0.1:2000`) - listen address
+
+- `metrics` (boolean, by default `false`) - if `True`, expose Prometheus metrics by `<API_ADDRESS>/metrics` address
+  
