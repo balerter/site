@@ -5,7 +5,7 @@ date = 2020-02-04T16:08:54+03:00
 
 # Balerter
 
-Balerter is a Scripts Bases Alerting System
+Balerter is a Script Based Alerting System
 
 > Sorry! Translate from Russian to English in progress. 
 > If you may to help us translate this site, welcome to our [official telegram group](https://t.me/balerter) 
@@ -16,17 +16,18 @@ Balerter is a Scripts Bases Alerting System
 - [Basics](basics)
     - [About](basics/about)
     - [Installation](basics/install)
-- [~~Configuration~~](configuration)
+- [Configuration](configuration)
     - [~~Scripts Sources~~](configuration/scripts)
         - [~~Folder~~](configuration/scripts/folder)
-    - [~~Data Sources~~](configuration/datasources)
-        - [~~Clickhouse~~](configuration/datasources/clickhouse)
-        - [~~Prometheus~~](configuration/datasources/prometheus)
-        - [~~Postgres~~](configuration/datasources/postgres)
-        - [~~MySQL~~](configuration/datasources/mysql)
-    - [~~Channels~~](configuration/channels)
-        - [~~Slack~~](configuration/channels/slack)
-        - [~~Telegram~~](configuration/channels/telegram)
+    - [Data Sources](configuration/datasources)
+        - [Clickhouse](configuration/datasources/clickhouse)
+        - [Prometheus](configuration/datasources/prometheus)
+        - [Postgres](configuration/datasources/postgres)
+        - [MySQL](configuration/datasources/mysql)
+    - [Channels](configuration/channels)
+        - [Slack](configuration/channels/slack)
+        - [Telegram](configuration/channels/telegram)
+        - [Syslog](configuration/channels/syslog)
     - [~~Storage~~](configuration/storages)
         - [~~S3~~](configuration/storages/s3)
     - [~~Global~~](configuration/global)
