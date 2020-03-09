@@ -60,3 +60,4 @@ Balerter is a Script Based Alerting System
 - [~~Examples~~](examples)
     - [~~CPU Loading~~](examples/01)
     - [~~Goroutines count (with a chart)~~](examples/02)
+- [Changelog](changelog)
