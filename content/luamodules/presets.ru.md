@@ -61,3 +61,16 @@ h.printTable(t)
     }
 }
 ```
+
+### json
+
+Позволяет кодировать/декодировать строки в lua таблицы
+
+Используется модуль https://github.com/rxi/json.lua
+
+```
+json = require('json')
+
+json.encode({ 1, 2, 3, { x = 10 } }) -- Returns '[1,2,3,{"x":10}]'
+json.decode('[1,2,3,{"x":10}]') -- Returns { 1, 2, 3, { x = 10 } }
+```

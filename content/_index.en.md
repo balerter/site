@@ -47,6 +47,8 @@ Balerter is a Script Based Alerting System
     - [~~About~~](luamodules/about)
     - [~~Crate a lua module~~](luamodules/new)
     - [~~Preset modules~~](luamodules/presets)
+        - [~~h~~](luamodules/presets#h)
+        - [~~json~~](luamodules/presets#json)
 - [~~Scripts~~](scripts)
     - [~~Basics~~](scripts/basics)
     - [~~Meta-tags~~](scripts/meta-tags)
