@@ -6,6 +6,15 @@ chapter = false
 pre = "<b>IX. </b>"
 +++
 
+
+#### 2020-03-11 `v0.1.2`
+
+- removed API method `/api/v1/config`
+- refactoring API method `/api/v1/alerts`
+    - changed output format
+    - added filters by 'name' and/or 'level'
+- other optimizations
+
 #### 2020-03-09 `v0.1.1`
 
 - fix a typo in the `http` core module

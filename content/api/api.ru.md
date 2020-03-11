@@ -19,11 +19,10 @@ weight: 1
 
 |field|type|description|
 |-----|----|-----------|
-|count|int| количество вызовов данного уровня алерта с момента последнего изменения |
-|last_change|datetime| время, когда последний раз было изменения уровня алерта |
-|level|int| текущий уровень алерта (см. AlertLevel) |
 |name|string| имя алерта |
-|start|datetime| время, когда алерт был вызван первый раз |
+|level|int| текущий уровень алерта (error/warning/success) |
+|count|int| количество вызовов данного уровня алерта с момента последнего изменения |
+|updated_at|datetime| время, когда последний раз было изменения уровня алерта, формат time.RFC3339 (YYYY-MM-DDTHH:mm:ssZoffset) |
 
 Пример:
 
@@ -31,9 +30,8 @@ weight: 1
 {
     "count": 2,
     "last_change": "2020-02-17T14:03:05.403478+03:00",
-    "level": 2,
+    "level": "error",
     "name": "alert-name",
-    "start": "2020-02-17T14:03:05.403458+03:00"
 }
 ```
 
@@ -41,17 +39,13 @@ weight: 1
 
 > Допустим, ваш скрипт выполянется 1 раз в минуту. И каждый свой запуск он для алерта 'alert-name' указывает статус Success. В этом случае, если вы вызовете метод API для получения спсика алертов, то для алерта 'alert-name' поле Count будет равно 5. Так как, к этому моменту скрипт 5 раз "сказал", что этот алерт имеет статус `Success` 
 
-### `AlertLevel`
-
-- 1 - Success
-- 2 - Error  
-- 3 - Warn
-
 ## Методы API
 
-### `GET /api/<version>/alerts`
+### `GET /api/v1/alerts?name=<NAME1>,<NAME2>&level=<LEVEL1>,<LEVEL2>`
 
 Получение списка Алертов
+
+Необязательные Query аргументы `name` и `level` позволяют отфильтровать выдачу по имени и/или уровню. Вы можете указать несколько имен или уровней через запятую
 
 Ответ:
 
@@ -62,14 +56,19 @@ weight: 1
     "last_change": "2020-02-17T14:03:05.403478+03:00",
     "level": 2,
     "name": "a1",
-    "start": "2020-02-17T14:03:05.403458+03:00"
   },
   ...
 ]
 ```
 
-### `GET /api/<version>/config`
+Примеры запросов:
 
-Получение конфигурации в JSON представлении.
-
-Для просмотра возможных вариантов ответа, смотрите раздел [Конфигурация](../../configuration/example)
+```
+GET /api/v1/alerts
+GET /api/v1/alerts?name=foo
+GET /api/v1/alerts?name=foo,bar
+GET /api/v1/alerts?level=error
+GET /api/v1/alerts?level=error,success
+GET /api/v1/alerts?level=error,success&name=foo,bar
+GET /api/v1/alerts?name=foo&level=error
+```
