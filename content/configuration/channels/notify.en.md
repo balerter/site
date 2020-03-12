@@ -7,6 +7,8 @@ weight: 4
 
 Send standard OS GUI notification 
 
+> Important! This channel does not support 'fields' from alert options
+
 ```
 notify:
   - name: default
