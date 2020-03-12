@@ -2,6 +2,7 @@
 title: "Slack"
 date: 2020-02-04T16:50:16+03:00
 draft: false
+weight: 1
 ---
 
 ```

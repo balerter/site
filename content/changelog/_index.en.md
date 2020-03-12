@@ -6,6 +6,9 @@ chapter = false
 pre = "<b>IX. </b>"
 +++
 
+#### 2020-03-12 `v0.1.3`
+
+- added channel 'notify' for standard OS GUI notifications
 
 #### 2020-03-11 `v0.1.2`
 

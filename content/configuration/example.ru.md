@@ -62,6 +62,7 @@ channels:
     - name: slack-notification
       token: SLACK-APPLICATION-TOKEN
       channel: notification
+
   telegram:
     - name: tg1
       token: TELEGRAM-BOT-TOKEN
@@ -77,6 +78,13 @@ channels:
       network: tcp
       address: 127.0.0.1:10515
       priority: 'EMERG|DAEMON'
+  
+  notify:
+    - name: default
+      icons:
+        success: /path/to/logo-success.png
+        error: /path/to/logo-error.png
+        warning: /path/to/logo-warning.png
 
 storages:
   s3:

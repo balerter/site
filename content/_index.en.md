@@ -28,6 +28,7 @@ Balerter is a Script Based Alerting System
         - [Slack](configuration/channels/slack)
         - [Telegram](configuration/channels/telegram)
         - [Syslog](configuration/channels/syslog)
+        - [Notify](configuration/channels/notify)
     - [Storage](configuration/storages)
         - [S3](configuration/storages/s3)
     - [Global](configuration/global)

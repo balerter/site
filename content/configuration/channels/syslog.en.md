@@ -2,6 +2,7 @@
 title: "Syslog"
 date: 2020-02-04T16:50:16+03:00
 draft: false
+weight: 3
 ---
 
 JSON marshalled messaged will be send to syslog server
