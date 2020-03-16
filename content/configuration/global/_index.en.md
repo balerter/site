@@ -34,3 +34,27 @@ HTTP API server settings
 
 - `metrics` (boolean, by default `false`) - if `True`, expose Prometheus metrics by `<API_ADDRESS>/metrics` address
   
+### `storages`
+
+Storage settings for core-modules.
+You should set storage name, described in section [storages/core](../storages/core). Use a format:  
+`<STORAGE_TYPE>.<STORAGE_NAME>`. Except for builtin storage - `memory` 
+
+> By default for all modules uses builtin value - `memory`
+
+- alert: storage for Alerts data  
+- kv: storage for KV data
+
+An example:
+```
+storages:
+  core:
+    file:
+      - name: primary1
+        path: /tmp/primary1.bin
+...
+global:
+  storages:
+    alert: file.primary1
+    kv: file.primary1
+```  

@@ -5,17 +5,32 @@ draft: false
 weight: 5
 ---
 
-In the `storages` section describes settings for remote storages.
 
-- [s3](s3)
+In section `storages` describes:
+- core : for store Alert data and KV data 
+- upload : for upload files (usually images)
 
 ```
 storages:
-  s3:
-    - name: dev
-      region: us-east1
-      key: SOME_KEY
-      secret: SOME_SECRET
-      endpoint: SOME_ENDPOINT
-      bucket: SOME_BUCKET
+  core:
+    file:
+      - name: primaryFile
+        path: /path/to/file
+  upload:
+    s3:
+      - name: dev
+        region: us-east1
+        key: SOME_KEY
+        secret: SOME_SECRET
+        endpoint: SOME_ENDPOINT
+        bucket: SOME_BUCKET
 ```
+
+## Core
+
+- [file](core/file)
+
+## Upload
+
+- [s3](upload/s3)
+

@@ -5,18 +5,31 @@ draft: false
 weight: 5
 ---
 
-В секции `storages` описываются настроки для подключения к хранилищам, куда можно загрузить файлы. Обычно это используется для загрузки изображений (графиков)
-
-Поддерживаемые типы хранилища:
-- [s3](s3)
+В секции `storages` описываются хранилища:
+- core : для хранения данных KV и Алертов 
+- upload : для загрузки файлов. Обычно это используется для загрузки изображений (графиков)
 
 ```
 storages:
-  s3:
-    - name: dev
-      region: us-east1
-      key: SOME_KEY
-      secret: SOME_SECRET
-      endpoint: SOME_ENDPOINT
-      bucket: SOME_BUCKET
+  core:
+    file:
+      - name: primaryFile
+        path: /path/to/file
+  upload:
+    s3:
+      - name: dev
+        region: us-east1
+        key: SOME_KEY
+        secret: SOME_SECRET
+        endpoint: SOME_ENDPOINT
+        bucket: SOME_BUCKET
 ```
+
+## Core
+
+- [file](core/file)
+
+## Upload
+
+- [s3](upload/s3)
+

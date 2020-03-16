@@ -12,7 +12,7 @@ Top-level configuration sections:
 - [scripts](../scripts) - script sources
 - [datasources](../datasources) - data sources
 - [channels](../channels) - notification channels
-- [storages](../storages) - storages for upload data. For example, images
+- [storages](../storages) - storages for upload data, for example, images. And for store alert/kv date (core storage)
 - [global](../global) - global settings
 
 An example:
@@ -87,13 +87,18 @@ channels:
         warning: /path/to/logo-warning.png
 
 storages:
-  s3:
-    - name: dev
-      region: us-east1
-      key: SOME_KEY
-      secret: SOME_SECRET
-      endpoint: SOME_ENDPOINT
-      bucket: SOME_BUCKET
+  core:
+    file:
+      - name: primaryFile
+        path: /path/to/file
+  upload:
+    s3:
+      - name: dev
+        region: us-east1
+        key: SOME_KEY
+        secret: SOME_SECRET
+        endpoint: SOME_ENDPOINT
+        bucket: SOME_BUCKET
 
 global:
   send_start_notification:
@@ -103,5 +108,8 @@ global:
   api:
     address: 127.0.0.1:2000
     metrics: true
+  storages:
+    alert: file.primaryFile
+    kv: memory
 ```
 

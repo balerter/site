@@ -6,6 +6,11 @@ chapter = false
 pre = "<b>IX. </b>"
 +++
 
+#### 2020-03-16 `v0.2.0`
+
+- support a persistent storage for Alerts and KV data
+    - type: file
+
 #### 2020-03-12 `v0.1.3`
 
 - added channel 'notify' for standard OS GUI notifications

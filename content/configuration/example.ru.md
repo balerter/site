@@ -12,7 +12,7 @@ weight: 1
 - [scripts](../scripts) - описание источников скриптов
 - [datasources](../datasources) - описание источников данных
 - [channels](../channels) - описание каналов отправки уведомлений
-- [storages](../storages) - описание хранилищ для загрузки данных. например, изображений
+- [storages](../storages) - описание хранилищ для загрузки данных, например, изображений. И для хранения информации об алертах и KV
 - [global](../global) - глобальные настройки
 
 Пример:
@@ -87,13 +87,18 @@ channels:
         warning: /path/to/logo-warning.png
 
 storages:
-  s3:
-    - name: dev
-      region: us-east1
-      key: SOME_KEY
-      secret: SOME_SECRET
-      endpoint: SOME_ENDPOINT
-      bucket: SOME_BUCKET
+  core:
+    file:
+      - name: primaryFile
+        path: /path/to/file
+  upload:
+    s3:
+      - name: dev
+        region: us-east1
+        key: SOME_KEY
+        secret: SOME_SECRET
+        endpoint: SOME_ENDPOINT
+        bucket: SOME_BUCKET
 
 global:
   send_start_notification:
@@ -103,5 +108,7 @@ global:
   api:
     address: 127.0.0.1:2000
     metrics: true
+  storages:
+    alert: file.primaryFile
+    kv: memory
 ```
-
