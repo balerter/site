@@ -10,7 +10,14 @@ pre = "<b>IX. </b>"
 
 - configuration schema changes
     - field 'updateInterval' in 'scripts' section [see more](../configuration/scripts)
-
+    - all 'snake_case' fields now have 'camelCase' format
+        - datasources.clickhouse.ssl_cert_path -> datasources.clickhouse.sslCertPath
+        - datasources.prometheus.basic_auth -> datasources.prometheus.basicAuth 
+        - datasources.postgres.ssl_mode -> datasources.postgres.sslMode 
+        - datasources.postgres.ssl_cert_path -> datasources.postgres.sslCertPath 
+        - channels.telegram.chat_id -> channels.telegram.chatId 
+        - global.send_start_notification -> global.sendStartNotification 
+        - global.send_stop_notification -> global.sendStopNotification 
 
 #### 2020-03-16 `v0.2.0`
 

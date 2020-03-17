@@ -50,8 +50,8 @@ datasources:
       username: username
       password: password
       database: database
-      ssl_mode: verify-full
-      ssl_cert_path: /path/to/cert.crt
+      sslMode: verify-full
+      sslCertPath: /path/to/cert.crt
   
   mysql:
     - name: mysql1
@@ -66,7 +66,7 @@ channels:
   telegram:
     - name: tg1
       token: TELEGRAM-BOT-TOKEN
-      chat_id: 100500
+      chatId: 100500
       proxy:
         address: 10.20.30.40:5060
         auth:
@@ -101,9 +101,9 @@ storages:
         bucket: SOME_BUCKET
 
 global:
-  send_start_notification:
+  sendStartNotification:
     - slack-notification
-  send_stop_notification:
+  sendStopNotification:
     - slack-notification
   api:
     address: 127.0.0.1:2000
