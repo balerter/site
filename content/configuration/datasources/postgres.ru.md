@@ -12,8 +12,8 @@ port: 5432
 username: username
 password: password
 database: database
-ssl_mode: verify-full
-ssl_cert_path: /path/to/cert.crt
+sslMode: verify-full
+sslCertPath: /path/to/cert.crt
 ```
 
 ### name 
@@ -60,13 +60,13 @@ local ds = require('datasource.postgres.pg1')
 
 Имя БД для подключения
 
-### ssl_mode
+### sslMode
 
 > По-умолчанию `disable`
 
 SSL режим
 
-### ssl_cert_path
+### sslCertPath
 
 > По-умолчанию пустая строка
 

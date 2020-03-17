@@ -18,6 +18,7 @@ pre = "<b>IX. </b>"
         - channels.telegram.chat_id -> channels.telegram.chatId 
         - global.send_start_notification -> global.sendStartNotification 
         - global.send_stop_notification -> global.sendStopNotification 
+- added basic support for datasource: [Loki](../core/datasource/loki) 
 
 #### 2020-03-16 `v0.2.0`
 

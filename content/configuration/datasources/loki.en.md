@@ -1,12 +1,12 @@
 ---
-title: "Prometheus"
+title: "Loki"
 date: 2020-02-04T17:10:42+03:00
 draft: false
-weight: 2
+weight: 5
 ---
 
 ```
-name: prom1
+name: loki1
 url: domain.com
 basicAuth:
   username: username
@@ -21,7 +21,7 @@ basicAuth:
 Datasource name
 
 ```
-local ds = require('datasource.prometheus.prom1')
+local ds = require('datasource.loki.loki1')
 ```
 
 ### url
@@ -33,4 +33,4 @@ API path `/api/v1/...` will be added
 
 ### basicAuth
 
-Username and password, if Prometheus require Basic Auth
+Username and password, if Loki require Basic Auth

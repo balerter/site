@@ -1,12 +1,12 @@
 ---
-title: "Тип Prometheus"
+title: "Тип Loki"
 date: 2020-02-04T17:10:42+03:00
 draft: false
-weight: 2
+weight: 5
 ---
 
 ```
-name: prom1
+name: loki1
 url: domain.com
 basicAuth:
   username: username
@@ -25,7 +25,7 @@ basicAuth:
 По этому имени вы будете обращаться из скрипта, например:
 
 ```
-local ds = require('datasource.prometheus.prom1')
+local ds = require('datasource.loki.loki1')
 ```
 
 ### url

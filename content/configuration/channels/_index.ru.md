@@ -22,7 +22,7 @@ channels:
   telegram:
     - name: tg1
       token: TELEGRAM-BOT-TOKEN
-      chat_id: 100500
+      chatId: 100500
       proxy:
         address: 10.20.30.40:5060
         auth:

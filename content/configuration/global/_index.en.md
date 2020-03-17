@@ -9,20 +9,20 @@ In the `global` section describes common settings
 
 ```
 global:
-  send_start_notification:
+  sendStartNotification:
     - slack-notification
-  send_stop_notification:
+  sendStopNotification:
     - slack-notification
   api:
     address: 127.0.0.1:2000
     metrics: true
 ```
 
-### `send_start_notification` 
+### `sendStartNotification` 
 
 Channels list, which will be send notification about application **start**. If omit, message will not be send.
 
-### `send_stop_notification` 
+### `sendStopNotification` 
 
 Channels list, which will be send notification about application **stop**. If omit, message will not be send.
 

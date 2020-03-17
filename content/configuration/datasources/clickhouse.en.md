@@ -12,7 +12,7 @@ port: 6440
 username: username
 password: password
 database: database
-ssl_cert_path: /path/to/cert.crt
+sslCertPath: /path/to/cert.crt
 ```
 
 ### name 
@@ -57,7 +57,7 @@ Connection password
 
 Connection database
 
-### ssl_cert_path
+### sslCertPath
 
 > By default: empty string
 

@@ -12,8 +12,8 @@ port: 5432
 username: username
 password: password
 database: database
-ssl_mode: verify-full
-ssl_cert_path: /path/to/cert.crt
+sslMode: verify-full
+sslCertPath: /path/to/cert.crt
 ```
 
 ### name 
@@ -56,13 +56,13 @@ Connection password
 
 Connection database
 
-### ssl_mode
+### sslMode
 
 > By default `disable`
 
 SSL mode
 
-### ssl_cert_path
+### sslCertPath
 
 > By default: empty string
 

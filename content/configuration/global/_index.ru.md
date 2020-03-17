@@ -9,9 +9,9 @@ weight: 6
 
 ```
 global:
-  send_start_notification:
+  sendStartNotification:
     - slack-notification
-  send_stop_notification:
+  sendStopNotification:
     - slack-notification
   api:
     address: 127.0.0.1:2000
@@ -21,11 +21,11 @@ global:
     kv: memory
 ```
 
-### `send_start_notification` 
+### `sendStartNotification` 
 
 Список каналов, куда будет отправлено уведомление **о старте** приложения. Если не указано, уведомление отправлено не будет.
 
-### `send_stop_notification` 
+### `sendStopNotification` 
 
 Список каналов, куда будет отправлено уведомление **об остановке** приложения. Если не указано, уведомление отправлено не будет.
 

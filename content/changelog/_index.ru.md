@@ -17,7 +17,8 @@ pre = "<b>IX. </b>"
         - datasources.postgres.ssl_cert_path -> datasources.postgres.sslCertPath 
         - channels.telegram.chat_id -> channels.telegram.chatId 
         - global.send_start_notification -> global.sendStartNotification 
-        - global.send_stop_notification -> global.sendStopNotification 
+        - global.send_stop_notification -> global.sendStopNotification
+- добавлена базовая поддержка источника данных: [Loki](../core/datasource/loki) 
 
 #### 2020-03-16 `v0.2.0`
 

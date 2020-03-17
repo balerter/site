@@ -57,6 +57,13 @@ datasources:
     - name: mysql1
       dsn: user:secret@tcp(127.0.0.1:3306)/database
 
+  loki:
+    - name: loki1
+      url: domain.com
+      basicAuth:
+        username: username
+        password: password
+
 channels:
   slack:
     - name: slack-notification

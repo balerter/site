@@ -12,7 +12,7 @@ port: 6440
 username: username
 password: password
 database: database
-ssl_cert_path: /path/to/cert.crt
+sslCertPath: /path/to/cert.crt
 ```
 
 ### name 
@@ -59,7 +59,7 @@ local ds = require('datasource.clickhouse.ch1')
 
 Имя БД для подключения
 
-### ssl_cert_path
+### sslCertPath
 
 > По-умолчанию пустая строка
 
