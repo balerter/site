@@ -19,12 +19,12 @@ weight: 1
 
 ```
 scripts:
+  updateInterval: 5s
   sources:
     folder:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
-        update_interval: 5s
 
 datasources:
   clickhouse:
@@ -34,12 +34,12 @@ datasources:
       username: username
       password: password
       database: database
-      ssl_cert_path: /path/to/cert.crt
+      sslCertPath: /path/to/cert.crt
 
   prometheus:
     - name: prom1
       url: domain.com
-      basic_auth:
+      basicAuth:
         username: username
         password: password
 

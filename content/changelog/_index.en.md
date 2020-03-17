@@ -6,6 +6,12 @@ chapter = false
 pre = "<b>IX. </b>"
 +++
 
+#### 2020-03-17 `v0.3.0`
+
+- configuration schema changes
+    - field 'updateInterval' in 'scripts' section [see more](../configuration/scripts)
+
+
 #### 2020-03-16 `v0.2.0`
 
 - support a persistent storage for Alerts and KV data

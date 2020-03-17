@@ -11,11 +11,18 @@ weight: 2
 
 ```
 scripts:
+  updateInterval: 5s
   sources:
     folder:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
-        update_interval: 5s
 ```
 
+### `updateInterval: <TIME INTERVAL>`
+
+> По-умолчанию: 1 минута
+
+Интервал, с которым система будет проверять изменения в источниках скриптов и применять изменения, если они были
+
+Допустимые суффксы для указания интервала: "ns", "us" (or "µs"), "ms", "s", "m", "h".

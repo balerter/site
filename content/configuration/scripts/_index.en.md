@@ -11,11 +11,18 @@ In the `scripts.sources` section describes script sources.
 
 ```
 scripts:
+  updateInterval: 5s
   sources:
     folder:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
-        update_interval: 5s
 ```
 
+### `updateInterval: <TIME INTERVAL>`
+
+> By default: 1 minute
+
+An interval for check changes in scrip sources
+
+Possible suffixes: "ns", "us" (or "µs"), "ms", "s", "m", "h".

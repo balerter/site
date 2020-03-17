@@ -19,12 +19,12 @@ An example:
 
 ```
 scripts:
+  updateInterval: 5s
   sources:
     folder:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
-        update_interval: 5s
 
 datasources:
   clickhouse:
