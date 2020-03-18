@@ -68,51 +68,50 @@ local alert = require('alert')
 alert.error('alert-id', 'An error occured!`)
 ```
 
-Так как, при старте сервиса все Алерты имееют статус по-умолчанию `Success`, то при первом запуске скрипта и измениии статуса на `Error` вы получите уведомление.
+Because every alerts on start have status `Success`, on first script run alert will be changed to `Error` and you will get notification
 
-При последующих запусках скрипта, уведомления об ошибке отправляться (повторяться) не будут, так как Алерт уже имеет статус `Error` и этот статус не меняется.
+On next runs, notifications will not be sent, because Alert already has status `Error'
 
-Теперь в скрипте напишем следующее:
+Now change the script (add alert options):
 
 ```
 alert.error('alert-id', 'An error occured!`, { repeat = 5 })
 ```
 
-Это будет означать, что, пока статус не поменялся, каждый пятый вызов этого метода будет приводить к отправке сообщения. То есть, каждые пять минут вы будете получать уведомление о ошибке, пока статус не поменяется.
+This mean, while status does not changed, every 5 runs notification will be sent
 
-#### channels - каналы для отправки уведомлений
+#### channels - notification channels
 
-Позволяет переопределить список каналов, куда будет отправлено уведомление.
+Redefine channels for send notifications
 
-По-умолчанию берутся все каналы, описанные в файле конфигурации. Для всех Алертов конкретного скрипта можно переопределить список каналов с помощью мета-тега `@channels`. 
-И, наконец, в опциях Алерта можно переопределить каналы для этого конкретного алерта
+By default, notifications sent to all channels, registered in configuration
 
-Например:
+An example:
 
 ```
 alert.error('alert-name-1', 'Alert Text', { channels = {'slack-seo'} })
 ```
 
-#### fields - дополнительные поля в сообщении
+#### fields - additional information
 
-При отображении уведомления, помимо самого текста уведомления, можно добавить информация в виде массива строк, которая будет так же видна в сообщении.
-Конкретное отображение зависит от типа канала. То есть, например, в Slack и в Email будет разный вид. Но общая концепция "Дополнительная инфорация в виде массива строка" сохраняется
+Additional information for an alert message.
+Different channels may show it differently or not show!
 
-Пример:
+An example:
 
 ```
 alert.error('cpu-limit', 'High CPU', { ['fields'] = { 'cpu1 = 0.91', 'cpu2 = 0.97' } )
 ``` 
 
-### Методы
+### Methods
 
 #### `error(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
-> Алиасы: `on`, `fail`
+> Aliases: `on`, `fail`
 
-Установить для алерта статус **Error**
+Set status `Error`
 
-Примеры:
+An example:
 
 ```
 alert.error('alert-id', 'An error accured')
@@ -120,11 +119,13 @@ alert.on('alert-id', 'User balance too low', { repeat = 5 })
 alert.fail('alert-id', 'Service FOO is unavailable')
 ```
 
-#### `warn(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
+#### `warning(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
-Установить для алерта статус **Warning**
+> Aliases: `warn`
 
-Примеры:
+Set status **Warning**
+
+An example:
 
 ```
 alert.warn('alert-id', 'RPS too low')
@@ -132,11 +133,11 @@ alert.warn('alert-id', 'RPS too low')
 
 #### `success(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
-> Алиасы: `off`, `ok`
+> Aliases: `off`, `ok`
 
-Установить для алерта статус **Success**
+Set status **Success**
 
-Примеры:
+An example:
 
 ```
 alert.success('alert-id', 'Serive is available')

@@ -68,9 +68,3 @@ end
 }
 
 ```
-
-## Поддержка типов полей
-
-На данный момент не поддерживаются поля GEOMETRY, ENUM, BIT
-
-Если вам необходима их поддержка, создайте [issue на github](https://github.com/balerter/balerter/issues)
