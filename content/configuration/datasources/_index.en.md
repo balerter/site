@@ -50,6 +50,7 @@ datasources:
   loki:
     - name: loki1
       url: domain.com
+      timeout: 5s
       basicAuth:
         username: username
         password: password

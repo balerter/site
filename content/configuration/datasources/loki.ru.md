@@ -8,6 +8,7 @@ weight: 5
 ```
 name: loki1
 url: domain.com
+timeout: 5s
 basicAuth:
   username: username
   password: password
@@ -33,6 +34,12 @@ local ds = require('datasource.loki.loki1')
 > Обязательное поле
 
 URL для запросов. Требуемые пути API, например `/api/v1/query` будут добавлены автоматически
+
+### timeout
+
+> По умолчанию: 5s
+
+таймаут
 
 ### basicAuth
 
