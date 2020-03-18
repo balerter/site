@@ -10,6 +10,7 @@ telegram:
   - name: tg1
     token: TELEGRAM-BOT-TOKEN
     chatId: 100500
+    timeout: 5s
     proxy:
       address: 10.20.30.40:5060
       auth:
@@ -36,6 +37,12 @@ telegram:
 > Обязательное поле
 
 ID чата
+
+### timeout
+
+> По умолчанию: 5s
+
+Таймаут
 
 ### proxy
 

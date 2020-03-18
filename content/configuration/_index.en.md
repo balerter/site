@@ -35,6 +35,7 @@ datasources:
       password: password
       database: database
       sslCertPath: /path/to/cert.crt
+      timeout: 3s
 
   prometheus:
     - name: prom1
@@ -52,6 +53,7 @@ datasources:
       database: database
       sslMode: verify-full
       sslCertPath: /path/to/cert.crt
+      timeout: 3s
   
   mysql:
     - name: mysql1
@@ -74,6 +76,7 @@ channels:
     - name: tg1
       token: TELEGRAM-BOT-TOKEN
       chatId: 100500
+      timeout: 5s
       proxy:
         address: 10.20.30.40:5060
         auth:
@@ -98,6 +101,7 @@ storages:
     file:
       - name: primaryFile
         path: /path/to/file
+        timeout: 1s
   upload:
     s3:
       - name: dev

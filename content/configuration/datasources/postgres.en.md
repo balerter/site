@@ -14,6 +14,7 @@ password: password
 database: database
 sslMode: verify-full
 sslCertPath: /path/to/cert.crt
+timeout: 3s
 ```
 
 ### name 
@@ -67,3 +68,9 @@ SSL mode
 > By default: empty string
 
 Path to SSL cert 
+
+### timeout
+
+> By default: 5s string
+
+timeout 

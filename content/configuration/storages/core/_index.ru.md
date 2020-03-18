@@ -12,6 +12,7 @@ core:
   file:
     - name: primaryFile
       path: /path/to/file
+      timeout: 1s
 ```
 
 - [file](file)

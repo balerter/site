@@ -15,6 +15,7 @@ storages:
     file:
       - name: primaryFile
         path: /path/to/file
+        timeout: 1s
   upload:
     s3:
       - name: dev

@@ -14,6 +14,7 @@ password: password
 database: database
 sslMode: verify-full
 sslCertPath: /path/to/cert.crt
+timeout: 3s
 ```
 
 ### name 
@@ -71,3 +72,9 @@ SSL режим
 > По-умолчанию пустая строка
 
 Пусть к SSL сертификату для подключения к БД
+
+### timeout
+
+> По-умолчанию: 5s
+
+таймаут

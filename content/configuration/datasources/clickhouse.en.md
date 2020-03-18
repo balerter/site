@@ -13,6 +13,7 @@ username: username
 password: password
 database: database
 sslCertPath: /path/to/cert.crt
+timeout: 3s
 ```
 
 ### name 
@@ -62,3 +63,9 @@ Connection database
 > By default: empty string
 
 Path to SSL cert. If empty, SSL do not use
+
+### timeout
+
+> By default: 5s
+
+Timeout

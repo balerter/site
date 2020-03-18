@@ -10,6 +10,7 @@ Storage 'File'
 ```
 name: primaryFile
 path: /path/to/file
+timeout: 1s
 ```
 
 ### `name`
@@ -23,3 +24,9 @@ Storage name
 > Require
 
 Path to file
+
+### `timeout`
+
+> By default: 1s
+
+Timeout

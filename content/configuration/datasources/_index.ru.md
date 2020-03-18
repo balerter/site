@@ -23,6 +23,7 @@ datasources:
       password: password
       database: database
       sslCertPath: /path/to/cert.crt
+      timeout: 3s
 
   prometheus:
     - name: prom1
@@ -40,6 +41,7 @@ datasources:
       database: database
       sslMode: verify-full
       sslCertPath: /path/to/cert.crt
+      timeout: 3s
 
   mysql:
     - name: mysql1

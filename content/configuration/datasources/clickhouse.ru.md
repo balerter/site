@@ -13,6 +13,7 @@ username: username
 password: password
 database: database
 sslCertPath: /path/to/cert.crt
+timeout: 3s
 ```
 
 ### name 
@@ -64,3 +65,10 @@ local ds = require('datasource.clickhouse.ch1')
 > По-умолчанию пустая строка
 
 Пусть к SSL сертификату для подключения к БД. Если пустая строка, SSL для подключения не используется
+
+### timeout
+
+> По-умолчанию: 5s
+
+Таймаут
+

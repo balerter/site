@@ -10,6 +10,7 @@ weight: 1
 ```
 name: primaryFile
 path: /path/to/file
+timeout: 1s
 ```
 
 ### `name`
@@ -23,3 +24,9 @@ path: /path/to/file
 > Обязательное поле
 
 Путь к файлу
+
+### `timeout`
+
+> По умолчанию: 1s
+
+Таймаут для операций
