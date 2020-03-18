@@ -5,7 +5,10 @@ date = 2020-02-04T16:08:54+03:00
 
 # Balerter
 
-Balerter - система оповещений, основанная на скриптах
+Balerter это Script Based Alert Manager. Менеджер алертов, основанный на скриптах
+
+> Английская версия докементации содержит грамматические и лексические ошибки.
+> Мы будем рады принять любую помощь в исправлении документации. Спасибо!
 
 ### Содержание
 
@@ -45,6 +48,7 @@ Balerter - система оповещений, основанная на скр
         - [Prometheus](core/datasource/prometheus)
         - [MySQL](core/datasource/mysql)
         - [Loki](core/datasource/loki)
+    - [http](core/http)
 - [Lua Модули](luamodules)
     - [О lua модулях](luamodules/about)
     - [Создание lua модуля](luamodules/new)
@@ -60,6 +64,7 @@ Balerter - система оповещений, основанная на скр
     - [Подключение Slack](manuals/slack)
     - [Подключение Telegram](manuals/telegram)
 - [Примеры](examples)
+    - [Начальный](examples/00)
     - [Нагрузка на CPU](examples/01)
     - [Количество горутин (с графиком)](examples/02)
 - [Список изменений](changelog)

@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Balerter - a scipts based alerting system"
 theme = "hugo-theme-learn"
 
-defaultContentLanguage = "ru"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir= true
 
 [Languages]
