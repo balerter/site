@@ -6,6 +6,10 @@ chapter = false
 pre = "<b>IX. </b>"
 +++
 
+#### 2020-03-18 `v0.3.1`
+
+- add timeouts for datasources in configuration
+
 #### 2020-03-17 `v0.3.0`
 
 - configuration schema changes
