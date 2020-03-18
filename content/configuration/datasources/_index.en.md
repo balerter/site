@@ -46,6 +46,7 @@ datasources:
   mysql:
     - name: mysql1
       dsn: user:secret@tcp(127.0.0.1:3306)/database
+      timeout: 3s
 
   loki:
     - name: loki1

@@ -8,6 +8,7 @@ weight: 4
 ```
 name: mysql1
 dsn: user:secret@tcp(127.0.0.1:3306)/database
+timeout: 3s
 ```
 
 ### name 
@@ -35,3 +36,8 @@ local ds = require('datasource.postgres.mysql1')
 
 > В описании [используемой библиотеки](https://github.com/go-sql-driver/mysql) можно посмотреть подробнее про построение DSN
 
+### timeout
+
+> По-умолчанию: 5s
+
+таймаут

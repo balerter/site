@@ -8,6 +8,7 @@ weight: 4
 ```
 name: mysql1
 dsn: user:secret@tcp(127.0.0.1:3306)/database
+timeout: 3s
 ```
 
 ### name 
@@ -31,3 +32,8 @@ Format: `[username[:password]@][protocol[(address)]]/dbname[?param1=value1&...&p
 
 > [golang packge](https://github.com/go-sql-driver/mysql) for more information about DSN
 
+### timeout
+
+> By default: 5s string
+
+timeout

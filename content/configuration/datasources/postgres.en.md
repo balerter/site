@@ -73,4 +73,5 @@ Path to SSL cert
 
 > By default: 5s string
 
-timeout 
+timeout
+ 
