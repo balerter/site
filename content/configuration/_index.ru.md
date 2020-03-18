@@ -40,6 +40,7 @@ datasources:
   prometheus:
     - name: prom1
       url: domain.com
+      timeout: 3s
       basicAuth:
         username: username
         password: password

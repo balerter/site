@@ -8,6 +8,7 @@ weight: 2
 ```
 name: prom1
 url: domain.com
+timeout: 3s
 basicAuth:
   username: username
   password: password
@@ -37,3 +38,9 @@ URL для запросов. Требуемые пути API, например `
 ### basicAuth
 
 Имя и пароль пользователя, если источник данных защищен Basic аутентификацией
+
+### timeout
+
+> По-умолчанию: 5s
+
+таймаут
