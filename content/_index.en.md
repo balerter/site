@@ -3,7 +3,7 @@ title = "The Content"
 date = 2020-02-04T16:08:54+03:00
 +++
 
-# Balerter
+![logo](logo.png)
 
 Balerter is a Script Based Alert Manager
 
@@ -11,10 +11,11 @@ Balerter is a Script Based Alert Manager
 > We will be happy to accept any help in updating English version of the documentation.
 > Thank you!
 
+Fork me on the [github](https://github.com/balerter/balerter)
+
 ### The Content
 
 - [Basics](basics)
-    - [About](basics/about)
     - [Installation](basics/install)
 - [Configuration](configuration)
     - [Script Sources](configuration/scripts)
@@ -51,13 +52,11 @@ Balerter is a Script Based Alert Manager
         - [Loki](core/datasource/loki)
     - [http](core/http)
 - [Lua Modules](luamodules)
-    - [About](luamodules/about)
     - [Crate a lua module](luamodules/new)
     - [Preset modules](luamodules/presets)
         - [h](luamodules/presets#h)
         - [json](luamodules/presets#json)
 - [Scripts](scripts)
-    - [Basics](scripts/basics)
     - [Meta-tags](scripts/meta-tags)
 - [API](api)
     - [API](api/api)
