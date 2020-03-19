@@ -115,6 +115,7 @@ storages:
         bucket: SOME_BUCKET
 
 global:
+  luaModulesPath: /modules/?.lua;/modules/?/?.lua
   sendStartNotification:
     - slack-notification
   sendStopNotification:

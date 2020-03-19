@@ -9,6 +9,7 @@ weight: 6
 
 ```
 global:
+  luaModulesPath: /modules/?.lua;/modules/?/?.lua
   sendStartNotification:
     - slack-notification
   sendStopNotification:
@@ -20,6 +21,12 @@ global:
     alert: file.primaryFile
     kv: memory
 ```
+
+### `luaModulesPath`
+
+> По умолчанию: "./?.lua;./modules/?.lua;./modules/?/init.lua" 
+
+Путь с папке с lua модулями
 
 ### `sendStartNotification` 
 

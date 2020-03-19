@@ -9,6 +9,7 @@ In the `global` section describes common settings
 
 ```
 global:
+  luaModulesPath: /modules/?.lua;/modules/?/?.lua
   sendStartNotification:
     - slack-notification
   sendStopNotification:
@@ -18,6 +19,12 @@ global:
     metrics: true
 ```
 
+### `luaModulesPath`
+
+> By default: "./?.lua;./modules/?.lua;./modules/?/init.lua" 
+
+Path to lua modules folder
+ 
 ### `sendStartNotification` 
 
 Channels list, which will be send notification about application **start**. If omit, message will not be send.
