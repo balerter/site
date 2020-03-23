@@ -115,6 +115,29 @@ alert.error('cpu-limit', 'High CPU', { ['fields'] = { 'cpu1 = 0.91', 'cpu2 = 0.9
 
 ### Методы
 
+#### `get(<ALERT_NAME>) result, error`
+
+Получить информацию об алерте. 
+
+Если произошла ошибка, она будет возвращена вторым параметром
+
+Ответ:
+
+```
+{
+    name = <ALERT_NAME>
+    level = <ALERT_LEVEL> (error|warning|success)
+    last_change = <UNIX_TIMESTAMP>
+    count = <INT>
+}
+```
+
+Пример:
+
+```
+info = alert.get('alert-id')
+```
+
 #### `error(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
 > Алиасы: `on`, `fail`

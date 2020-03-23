@@ -9,6 +9,7 @@ pre = "<b>IX. </b>"
 #### 2020-03-23 `v0.3.2`
 
 - added an API route '/liveness' [API](../api)
+- added a method `get` for the core module `alert`. Use it for get an information about an alert [Alert](../core/alert)
 
 #### 2020-03-18 `v0.3.1`
 
