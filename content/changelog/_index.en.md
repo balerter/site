@@ -11,6 +11,7 @@ pre = "<b>IX. </b>"
 - added an API route '/liveness' [API](../api)
 - added a method `get` for the core module `alert`. Use it for get an information about an alert [Alert](../core/alert)
 - added a configuration item `Global.LuaModulesPath`. It allows redefine a folder for loading Lua modules [Configuration Global](../configuration/global)
+- a base docker image was updated from alpine to debian:stretch-slim
 
 #### 2020-03-18 `v0.3.1`
 
