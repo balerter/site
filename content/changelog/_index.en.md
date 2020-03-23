@@ -6,6 +6,10 @@ chapter = false
 pre = "<b>IX. </b>"
 +++
 
+#### 2020-03-23 `v0.3.2`
+
+- added an API route '/liveness' [API](../api)
+
 #### 2020-03-18 `v0.3.1`
 
 - add timeouts for datasources in configuration
