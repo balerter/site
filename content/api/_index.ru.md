@@ -78,3 +78,25 @@ GET /api/v1/alerts?level=error,success
 GET /api/v1/alerts?level=error,success&name=foo,bar
 GET /api/v1/alerts?name=foo&level=error
 ```
+
+### `GET /api/v1/kv`
+
+Получение пар Key/Value из хранилища
+
+Ответ:
+
+```
+[
+    {
+        name = <NAME>,
+        value = <VALUE>
+    },
+    ...
+]
+```
+
+Пример:
+
+```
+GET /api/v1/kv
+```

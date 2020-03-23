@@ -79,3 +79,26 @@ GET /api/v1/alerts?level=error,success
 GET /api/v1/alerts?level=error,success&name=foo,bar
 GET /api/v1/alerts?name=foo&level=error
 ```
+
+
+### `GET /api/v1/kv`
+
+Obtain KV pairs from a storage
+
+A response:
+
+```
+[
+    {
+        name = <NAME>,
+        value = <VALUE>
+    },
+    ...
+]
+```
+
+An example:
+
+```
+GET /api/v1/kv
+```
