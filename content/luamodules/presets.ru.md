@@ -45,14 +45,14 @@ res, err = h.tableToMap(table, 'id')
 }
 ```
 
-#### `printTable(table)`
+#### `print(table)`
 
 Вывод содержимого таблицы в человеко-понятном виде
 
 ```
 local t = { ['foo'] = { ['bar'] = 42 } }
 
-h.printTable(t)
+h.print(t)
 
 -- результат
 {

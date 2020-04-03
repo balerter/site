@@ -98,3 +98,18 @@ An example:
 
 ...
 ```
+
+
+#### `@test <MAIN_SCRIPT_NAME>`
+
+Mark this script as 'Test' for the script with name `<MAIN_SCRIPT_NAME>`
+
+This script will be running only with `balerter/test` tool. With `balerter` this script will be ignored
+
+```
+-- @name demo-test
+-- @test demo
+
+test = require('test')
+...
+```

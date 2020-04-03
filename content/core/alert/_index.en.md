@@ -130,7 +130,7 @@ info = alert.get('alert-id')
 
 #### `error(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
-> Aliases: `on`, `fail`
+> Aliases: `fail`
 
 Set status `Error`
 
@@ -138,7 +138,6 @@ An example:
 
 ```
 alert.error('alert-id', 'An error accured')
-alert.on('alert-id', 'User balance too low', { repeat = 5 })
 alert.fail('alert-id', 'Service FOO is unavailable')
 ```
 
@@ -156,7 +155,7 @@ alert.warn('alert-id', 'RPS too low')
 
 #### `success(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
-> Aliases: `off`, `ok`
+> Aliases: `ok`
 
 Set status **Success**
 
@@ -164,7 +163,6 @@ An example:
 
 ```
 alert.success('alert-id', 'Serive is available')
-alert.off('alert-id', '', { quiet = true })
 alert.ok('alert-id', 'OK')
 ```
 

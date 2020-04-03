@@ -98,3 +98,17 @@ local a = 10
 
 ...
 ```
+
+#### `@test <MAIN_SCRIPT_NAME>`
+
+Указывает, что данный скрипт - это тест для скрипта с именем `<MAIN_SCRIPT_NAME>`
+
+Данный скрипт будет выполняться только с утилитой balerter/test, При обычном запуске balerter он будет игнорироваться
+
+```
+-- @name demo-test
+-- @test demo
+
+test = require('test')
+...
+```

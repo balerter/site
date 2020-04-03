@@ -1,8 +1,8 @@
 +++
 title = "Examples"
 date = 2020-02-04T16:08:54+03:00
-weight = 8
-pre = "<b>VIII. </b>"
+weight = 9
+pre = "<b>IX. </b>"
 +++
 
 - [Simple](00)

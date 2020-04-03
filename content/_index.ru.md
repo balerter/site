@@ -88,6 +88,7 @@ Balerter помогает вам:
     - [Мета-теги](scripts/meta-tags)
 - [API](api)
     - [Описание API](api/api)
+- [Тестирование](testing)
 - [Руководства](manuals)
     - [Подключение Slack](manuals/slack)
     - [Подключение Telegram](manuals/telegram)

@@ -1,10 +1,17 @@
 +++
 title = "Changelog"
 date = 2020-02-04T16:08:54+03:00
-weight = 9
+weight = 10
 chapter = false
-pre = "<b>IX. </b>"
+pre = "<b>X. </b>"
 +++
+
+#### 2020-04-03 `v0.4.0`
+
+- ability to write tests [Testing](../testing)
+- [BREAKING] removed alias-methods `alert.on` and `alert.off`
+- [BREAKING] renames method `printTable` from lua module `h` to `print`. Now you call pass any value, not only table
+- for obtain scripts from a source `folder`, script name will be defined as a filename without an extension. Before a path was been included 
 
 #### 2020-03-23 `v0.3.2`
 

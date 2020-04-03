@@ -87,6 +87,7 @@ In fact you are not limited in your cases, as you are not limited in writing any
     - [Meta-tags](scripts/meta-tags)
 - [API](api)
     - [API](api/api)
+- [Testing](testing)    
 - [Manuals](manuals)
     - [Connect to Slack](manuals/slack)
     - [Connect to Telegram](manuals/telegram)

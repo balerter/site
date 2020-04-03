@@ -44,14 +44,14 @@ res, err = h.tableToMap(table, 'id')
 }
 ```
 
-#### `printTable(table)`
+#### `print(table)`
 
-Beautify print table to the console
+Beautify print table or any value to the console
 
 ```
 local t = { ['foo'] = { ['bar'] = 42 } }
 
-h.printTable(t)
+h.print(t)
 
 -- a result
 {

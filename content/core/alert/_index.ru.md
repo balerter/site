@@ -140,7 +140,7 @@ info = alert.get('alert-id')
 
 #### `error(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
-> Алиасы: `on`, `fail`
+> Алиасы: `fail`
 
 Установить для алерта статус **Error**
 
@@ -148,7 +148,6 @@ info = alert.get('alert-id')
 
 ```
 alert.error('alert-id', 'An error accured')
-alert.on('alert-id', 'User balance too low', { repeat = 5 })
 alert.fail('alert-id', 'Service FOO is unavailable')
 ```
 
@@ -164,7 +163,7 @@ alert.warn('alert-id', 'RPS too low')
 
 #### `success(<ALERT_NAME>[, <ALERT_MESSAGE>[, <ALERT_OPTIONS>]])`
 
-> Алиасы: `off`, `ok`
+> Алиасы: `ok`
 
 Установить для алерта статус **Success**
 
@@ -172,7 +171,6 @@ alert.warn('alert-id', 'RPS too low')
 
 ```
 alert.success('alert-id', 'Serive is available')
-alert.off('alert-id', '', { quiet = true })
 alert.ok('alert-id', 'OK')
 ```
 
