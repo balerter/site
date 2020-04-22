@@ -9,11 +9,11 @@ pre = "<b>II. </b>"
 
 Секции конфигурации высшего уровня:
 
-- [scripts](../scripts) - описание источников скриптов
-- [datasources](../datasources) - описание источников данных
-- [channels](../channels) - описание каналов отправки уведомлений
-- [storages](../storages) - описание хранилищ для загрузки данных, например, изображений. И для хранения информации об алертах и KV
-- [global](../global) - глобальные настройки
+- [scripts](scripts) - описание источников скриптов
+- [datasources](datasources) - описание источников данных
+- [channels](channels) - описание каналов отправки уведомлений
+- [storages](storages) - описание хранилищ для загрузки данных, например, изображений. И для хранения информации об алертах и KV
+- [global](global) - глобальные настройки
 
 Пример:
 
@@ -25,6 +25,9 @@ scripts:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
+    file:
+      - name: demo1
+        filename: /path/to/demo.lua
 
 datasources:
   clickhouse:

@@ -8,6 +8,7 @@ weight: 2
 В секции `scripts.sources` описываются источники скриптов. В данный момент поддерживается только тип `folder`
 
 - [folder](folder)
+- [file](file)
 
 ```
 scripts:
@@ -17,6 +18,9 @@ scripts:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
+    file:
+      - name: demo1
+        filename: /path/to/demo.lua
 ```
 
 ### `updateInterval: <TIME INTERVAL>`

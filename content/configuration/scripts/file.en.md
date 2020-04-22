@@ -1,14 +1,13 @@
 ---
-title: "Folder"
+title: "File"
 date: 2020-02-04T16:50:16+03:00
 draft: false
-weight: 1
+weight: 2
 ---
 
 ```
 name: scripts
-path: /opt/scripts
-mask: '*.lua'
+filename: /opt/scripts/demo.lua
 ```
 
 ### name 
@@ -17,14 +16,9 @@ mask: '*.lua'
 
 Script source name
 
-### path
+### filename
 
 > Required
 
-Path to folder  
+Path to the script  
 
-### mask
-
-> By default: `*.lua`
-
-File mask

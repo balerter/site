@@ -8,6 +8,7 @@ weight: 2
 In the `scripts.sources` section describes script sources.
 
 - [folder](folder)
+- [file](file)
 
 ```
 scripts:
@@ -17,6 +18,9 @@ scripts:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
+    file:
+      - name: demo1
+        filename: /path/to/demo.lua
 ```
 
 ### `updateInterval: <TIME INTERVAL>`

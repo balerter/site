@@ -9,11 +9,11 @@ Configuration file has `yaml` format
 
 Top-level configuration sections:
 
-- [scripts](../scripts) - script sources
-- [datasources](../datasources) - data sources
-- [channels](../channels) - notification channels
-- [storages](../storages) - storages for upload data, for example, images. And for store alert/kv date (core storage)
-- [global](../global) - global settings
+- [scripts](scripts) - script sources
+- [datasources](datasources) - data sources
+- [channels](channels) - notification channels
+- [storages](storages) - storages for upload data, for example, images. And for store alert/kv date (core storage)
+- [global](global) - global settings
 
 An example:
 
@@ -25,6 +25,9 @@ scripts:
       - name: scripts
         path: /opt/scripts
         mask: '*.lua'
+    file:
+      - name: demo1
+        filename: /path/to/demo.lua
 
 datasources:
   clickhouse:
