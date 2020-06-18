@@ -12,6 +12,7 @@ In the `scripts.channels` section describes notification channels
 - [syslog](syslog)
 - [notify](notify)
 - [email](email)
+- [discord](discord)
 
 ```
 channels:
@@ -55,5 +56,10 @@ channels:
       password: secret
       secure: ssl
       timeout: 1000
+
+  discord:
+    - name: default
+      token: 'ABCD'
+      channelId: 1234
 ```
 

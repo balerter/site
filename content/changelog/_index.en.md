@@ -8,8 +8,12 @@ pre = "<b>X. </b>"
 
 #### 2020-06-18 `v0.6.0`
 
+- [ENHANCEMENT] added `Discord` channel [See more](../configuration/channels/discord)
 - [ENHANCEMENT] added `Email` channel [See more](../configuration/channels/email)
 - [ENHANCEMENT] new lua module: csv [See more](../luamodules/presets#csv)
+- [ENHANCEMENT] allow setting CLI option '-config=stdin' for read the configuration file from os.stdin instead filesystem
+- [FIX] do not start API server, if configuration option `global.API.Address` is empty
+- add `pprof` endpoints for API server
 
 #### 2020-04-23 `v0.5.0`
 

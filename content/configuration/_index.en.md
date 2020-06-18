@@ -114,6 +114,11 @@ channels:
       secure: ssl
       timeout: 1000
 
+  discord:
+    - name: default
+      token: 'ABCD'
+      channelId: 1234
+
 storages:
   core:
     file:
