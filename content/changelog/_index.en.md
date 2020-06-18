@@ -6,6 +6,10 @@ chapter = false
 pre = "<b>X. </b>"
 +++
 
+#### 2020-06-18 `v0.6.0`
+
+- [ENHANCEMENT] added `Email` channel
+
 #### 2020-04-23 `v0.5.0`
 
 - added core module [runtime](../core/runtime)

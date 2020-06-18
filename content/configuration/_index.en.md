@@ -102,6 +102,18 @@ channels:
         error: /path/to/logo-error.png
         warning: /path/to/logo-warning.png
 
+  email:
+    - name: default
+      from: foo@bar.com
+      to: alert@bar.com
+      cc: alert-cc@bar.com
+      host: bar.com
+      port: 1234
+      username: user
+      password: secret
+      secure: ssl
+      timeout: 1000
+
 storages:
   core:
     file:
