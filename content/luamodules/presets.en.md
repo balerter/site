@@ -73,3 +73,28 @@ json = require('json')
 json.encode({ 1, 2, 3, { x = 10 } }) -- Returns '[1,2,3,{"x":10}]'
 json.decode('[1,2,3,{"x":10}]') -- Returns { 1, 2, 3, { x = 10 } }
 ```
+
+### csv
+
+> https://github.com/FourierTransformer/ftcsv
+
+Work with csv
+
+An example:
+
+```
+local db = require('datasource.postgres.pg1')
+local log = require('log')
+local csv = require('csv')
+local h = require('h')
+
+res, err = db.query('SELECT * FROM users')
+if err ~= nil then
+    log.error('query error: ' .. err)
+    return
+end
+
+h.print(csv.encode(res, ","))
+```
+
+See more on [https://github.com/FourierTransformer/ftcsv](https://github.com/FourierTransformer/ftcsv)

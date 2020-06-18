@@ -8,7 +8,8 @@ pre = "<b>X. </b>"
 
 #### 2020-06-18 `v0.6.0`
 
-- [ENHANCEMENT] added `Email` channel
+- [ENHANCEMENT] added `Email` channel [See more](../configuration/channels/email)
+- [ENHANCEMENT] new lua module: csv [See more](../luamodules/presets#csv)
 
 #### 2020-04-23 `v0.5.0`
 
