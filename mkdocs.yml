@@ -49,6 +49,8 @@ nav:
           Scripts: configuration/sections/scripts.md
           Datasources: configuration/sections/datasources.md
           Channels: configuration/sections/channels.md
+          Upload Storages: configuration/sections/storages-upload.md
+          Core Storages: configuration/sections/storages-core.md
       - Secrets: configuration/secrets.md
       - Example: configuration/example.md
   - Changelog:
