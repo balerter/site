@@ -90,5 +90,8 @@ nav:
       - meta tags: scripts/meta-tags.md
       - escalate alerts: scripts/escalate.md
   - Testing: testing/index.md
+  - API:
+      - about: api/about.md
+      - metrics: api/metrics.md
   - Changelog:
       - changelog.md
