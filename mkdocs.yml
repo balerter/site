@@ -81,5 +81,13 @@ nav:
       - storage: core-modules/storage.md
       - test: core-modules/test.md
       - tls: core-modules/tls.md
+  - Lua Modules:
+      - about: lua-modules/about.md
+      - create modules : lua-modules/new.md
+      - preset modules: lua-modules/presets.md
+  - Scripts:
+      - about: scripts/about.md
+      - meta tags: scripts/meta-tags.md
+      - escalate alerts: scripts/escalate.md
   - Changelog:
       - changelog.md
