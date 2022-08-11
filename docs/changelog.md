@@ -1,3 +1,8 @@
+## v0.10.0 (2022-08-12)
+
+- add [Core API](/core-api)
+- add colors marks to slack messages
+
 ## v0.9.4 (2022-05-26)
 
 - cli flag `--safemode` for disable the `http` core module and `os` and `io` lua modules
