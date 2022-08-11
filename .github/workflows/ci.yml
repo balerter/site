@@ -12,4 +12,21 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+#      - run: mkdocs gh-deploy --force
+
+      - name: build and deploy
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          echo '${{ secrets.PAGES_SSH_KEY }}' > sshkey
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          chmod 0600 sshkey
+          ssh-add sshkey
+          mkdocs build
+          cd site
+          git config --global user.email "deploy@balerter.com"
+          git config --global user.name "deploy"
+          git init
+          git add -A
+          git commit -m 'deploy'
+          git push -f git@github.com:balerter/balerter.github.io.git master
