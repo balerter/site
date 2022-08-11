@@ -4,15 +4,14 @@ It's allows you to use core modules from your scripts, written and running outsi
 
 Libraries:
 
-- [go (todo)](https://domain.com)
-- [python (todo)](https://domain.com)
+- [go](https://github.com/balerter/core-api-go)
+- [python](https://github.com/balerter/core-api-python)
 
 Feel for free for contributions for these or new libraries!
 
 If you want to add new library for Balerter Core API, please check this [discussion](https://github.com/balerter/balerter/discussions/76)
 
-???+ warning
-    todo: describe `coreapi` config and add instructions for using it
+For use Core API, you need to add `coreApi` section to your `api` configuration. [Read more](/configuration/sections/api)
 
 ## API
 

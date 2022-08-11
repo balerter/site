@@ -3,6 +3,10 @@
     api {
       address = "127.0.0.1:2000"
       serviceAddress = "127.0.0.1:2001"
+      coreApi {
+        address = "127.0.0.1:2200"
+        authToken = "xxx"
+      }
     }
     ```
 === "YAML"
@@ -10,15 +14,18 @@
     api:
       address: 127.0.0.1:2000
       serviceAddress: 127.0.0.1:2001
+      coreApi:
+        address: 127.0.0.1:2200
+        authToken: xxx
     ```
 
-### `address`
+### address
 
 > By default: empty (disabled)
 
 If defined, API handler will be run on this address
 
-### `serviceAddress`
+### serviceAddress
 
 > By default: empty (disabled)
 
@@ -35,3 +42,9 @@ Also `pprof` routes will be run on this address:
 - /debug/pprof/goroutine
 - /debug/pprof/allocs
 
+### coreApi
+
+If Core API address is defined, balerter will run Core API server on this address.
+If authToken is defined, it will be used for authentication.
+
+Read more about [Core API](/core-api/about)
