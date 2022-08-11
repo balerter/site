@@ -44,33 +44,42 @@ plugins:
 nav:
   - Home: index.md
   - Getting started:
-      - Quick Start: getting-started/quickstart.md
-      - Installation: getting-started/installation.md
+      - quick start: getting-started/quickstart.md
+      - installation: getting-started/installation.md
       - CLI flags: getting-started/cli-flags.md
   - Configuration:
-      - About: configuration/about.md
-      - Top level sections:
-          Root values: configuration/sections/root.md
-          Scripts: configuration/sections/scripts.md
-          Datasources: configuration/sections/datasources.md
-          Channels: configuration/sections/channels.md
-          Upload Storages: configuration/sections/storages-upload.md
-          Core Storages: configuration/sections/storages-core.md
-          API: configuration/sections/api.md
-          System: configuration/sections/system.md
-      - Secrets: configuration/secrets.md
-      - Example: configuration/example.md
-  - Core Modules:
-      - About: core-modules/about.md
-      - Alert: core-modules/alert.md
-      - Api: core-modules/api.md
-      - Chart: core-modules/chart.md
-      - Datasource:
-          - About: core-modules/datasource/about.md
-          - Clickhouse: core-modules/datasource/clickhouse.md
-          - Prometheus: core-modules/datasource/prometheus.md
-          - Postgres: core-modules/datasource/postgres.md
-          - MySQL: core-modules/datasource/mysql.md
-          - Loki: core-modules/datasource/loki.md
+      - about: configuration/about.md
+      - top level sections:
+          root values: configuration/sections/root.md
+          scripts: configuration/sections/scripts.md
+          datasources: configuration/sections/datasources.md
+          channels: configuration/sections/channels.md
+          upload storages: configuration/sections/storages-upload.md
+          core storages: configuration/sections/storages-core.md
+          aPI: configuration/sections/api.md
+          system: configuration/sections/system.md
+      - secrets: configuration/secrets.md
+      - example: configuration/example.md
+  - Core modules:
+      - about: core-modules/about.md
+      - alert: core-modules/alert.md
+      - api: core-modules/api.md
+      - chart: core-modules/chart.md
+      - datasource:
+          - about: core-modules/datasource/about.md
+          - clickhouse: core-modules/datasource/clickhouse.md
+          - prometheus: core-modules/datasource/prometheus.md
+          - postgres: core-modules/datasource/postgres.md
+          - mysql: core-modules/datasource/mysql.md
+          - loki: core-modules/datasource/loki.md
+      - file: core-modules/file.md
+      - http: core-modules/http.md
+      - kv: core-modules/kv.md
+      - log: core-modules/log.md
+      - meta: core-modules/meta.md
+      - runtime: core-modules/runtime.md
+      - storage: core-modules/storage.md
+      - test: core-modules/test.md
+      - tls: core-modules/tls.md
   - Changelog:
       - changelog.md
