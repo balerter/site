@@ -105,4 +105,5 @@ nav:
       - tls: core-api/tls.md
       - datasource: core-api/datasource.md
       - kv: core-api/kv.md
+      - log: core-api/log.md
   - Changelog: changelog.md
