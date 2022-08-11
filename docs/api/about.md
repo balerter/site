@@ -105,7 +105,7 @@ A response example:
 
 > `POST /api/v1/runtime/run/{SCRIPT_NAME}`
 
-You should specify the script name in full format. For example: `folder.name1.script_name` (see [more](../scripts/about.html#naming) about script naming)
+You should specify the script name in full format. For example: `folder.name1.script_name` (see [more](../scripts/about) about script naming)
 
 The script will be run with no respect `@ignore` tag.
 

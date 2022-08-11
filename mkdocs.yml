@@ -27,6 +27,11 @@ extra:
       link: https://hub.docker.com/r/balerter/balerter
 
 markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -94,5 +99,10 @@ nav:
   - API:
       - about: api/about.md
       - metrics: api/metrics.md
-  - Core API: core-api/index.md
+  - Core API:
+      - about: core-api/about.md
+      - alert: core-api/alert.md
+      - tls: core-api/tls.md
+      - datasource: core-api/datasource.md
+      - kv: core-api/kv.md
   - Changelog: changelog.md
