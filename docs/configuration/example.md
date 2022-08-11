@@ -1,4 +1,4 @@
-Config file example with all config options
+Config file example
 
 === "HCL"
     ```tf title="config.hcl"
