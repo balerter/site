@@ -26,6 +26,9 @@ extra:
       link: https://hub.docker.com/r/balerter/balerter
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -41,6 +44,7 @@ plugins:
 nav:
   - Home: index.md
   - Getting started:
+      - Quick Start: getting-started/quickstart.md
       - Installation: getting-started/installation.md
       - CLI flags: getting-started/cli-flags.md
   - Configuration:
@@ -56,5 +60,17 @@ nav:
           System: configuration/sections/system.md
       - Secrets: configuration/secrets.md
       - Example: configuration/example.md
+  - Core Modules:
+      - About: core-modules/about.md
+      - Alert: core-modules/alert.md
+      - Api: core-modules/api.md
+      - Chart: core-modules/chart.md
+      - Datasource:
+          - About: core-modules/datasource/about.md
+          - Clickhouse: core-modules/datasource/clickhouse.md
+          - Prometheus: core-modules/datasource/prometheus.md
+          - Postgres: core-modules/datasource/postgres.md
+          - MySQL: core-modules/datasource/mysql.md
+          - Loki: core-modules/datasource/loki.md
   - Changelog:
       - changelog.md
