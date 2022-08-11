@@ -106,4 +106,5 @@ nav:
       - datasource: core-api/datasource.md
       - kv: core-api/kv.md
       - log: core-api/log.md
+      - runtime: core-api/runtime.md
   - Changelog: changelog.md

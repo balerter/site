@@ -1,12 +1,10 @@
 This endpoint allows to use [tls](/core-modules/tls) core module
 
-## methods
-
-### get
+## get
 
 Call `tls` module with `get` function
 
-#### request
+### request
 
 > `POST /tls/get`
 
@@ -27,7 +25,7 @@ local tls = require("tls")
 result = tls.get('domain.com')
 ```
 
-#### response
+### response
 
 ```json
 {
