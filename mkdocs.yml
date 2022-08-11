@@ -89,5 +89,6 @@ nav:
       - about: scripts/about.md
       - meta tags: scripts/meta-tags.md
       - escalate alerts: scripts/escalate.md
+  - Testing: testing/index.md
   - Changelog:
       - changelog.md
