@@ -107,4 +107,5 @@ nav:
       - kv: core-api/kv.md
       - log: core-api/log.md
       - runtime: core-api/runtime.md
+      - chart: core-api/chart.md
   - Changelog: changelog.md
