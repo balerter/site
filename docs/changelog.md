@@ -4,11 +4,11 @@
 
 ## v0.9.3 (2022-04-19)
 
-- Support for escalate alerts with `@escalate` meta-tag [See more](escalate)
+- Support for escalate alerts with `@escalate` meta-tag 
 
 ## v0.9.2 (2022-03-10)
 
-- add core module 'file' [See more](../coremodules/file)
+- add core module 'file' [See more](/core-modules/file)
 - refactoring telegram channel api. It's possible to send image directly from `chart.render`, without store to the S3 storage
 - remove escaping special characters for telegram messages
 
@@ -22,7 +22,7 @@
 
 ## v0.9.0 (2021-10-07)
 
-- update testing subsystem. Use test functions. [See more](../testing)
+- update testing subsystem. Use test functions. [See more](/testing)
 
 ## v0.8.4 (2021-09-23)
 
@@ -30,12 +30,12 @@
 
 ## v0.8.3 (2021-09-23)
 
-- add meta module [read more](../coremodules/meta)
-- add config option system.cronLocation [read more](../configuration/system)
+- add meta module [read more](/core-modules/meta)
+- add config option system.cronLocation [read more](/configuration/system)
 
 ## v0.8.2 (2021-08-30)
 
-- secrets in the config file, [read more](../configuration/secrets)
+- secrets in the config file, [read more](/configuration/secrets)
 
 ## v0.8.1 (2021-07-09)
 
@@ -44,7 +44,7 @@
 
 ## v0.8.0 (2021-07-08)
 
-- add the `Twilio Voice` channel, see a [configuration](../configuration/channel)
+- add the `Twilio Voice` channel, see a [configuration](/configuration/channel)
 - add option `Ignore` to all channels
 - add the `resend` alias for the `repeat` field for the alert options (scripts)
 
@@ -54,7 +54,7 @@
 
 ## v0.7.2 (2021-04-09)
 
-- add the prometheus metric for exposing alerts levels (see [documentation](../api/metrics))
+- add the prometheus metric for exposing alerts levels (see [documentation](/api/metrics))
     - `balerter_alert_status`
 - use ubuntu 20.10 as base image for docker images
 

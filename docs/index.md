@@ -92,4 +92,5 @@ else
 end
 ```
 
-> Calling `alert.error` does not send a notification. It changes the level value. A notification send when the level changes.
+???+ tip
+    Calling `alert.error` does not send a notification. It changes the level value. A notification send when the level changes.

@@ -1,13 +1,14 @@
 # Project information
 site_name: Balerter
-site_url: https://balertere.com
+site_url: https://balerter.com
 site_author: Andrey Privalov
 site_description: >-
   Script Based Alerting Manager
 
 # Repository
-repo_name: balerter/balerter
-repo_url: https://github.com/balerter/balerter
+repo_name: Documentation
+repo_url: https://github.com/balerter/site
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -21,7 +22,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/balerter
+      link: https://github.com/balerter/balerter
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/balerter/balerter
 
@@ -56,7 +57,7 @@ nav:
           channels: configuration/sections/channels.md
           upload storages: configuration/sections/storages-upload.md
           core storages: configuration/sections/storages-core.md
-          aPI: configuration/sections/api.md
+          api: configuration/sections/api.md
           system: configuration/sections/system.md
       - secrets: configuration/secrets.md
       - example: configuration/example.md
@@ -93,5 +94,5 @@ nav:
   - API:
       - about: api/about.md
       - metrics: api/metrics.md
-  - Changelog:
-      - changelog.md
+  - Core API: core-api/index.md
+  - Changelog: changelog.md
