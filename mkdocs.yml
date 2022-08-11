@@ -48,6 +48,7 @@ nav:
       - Top level sections:
           Scripts: configuration/sections/scripts.md
           Datasources: configuration/sections/datasources.md
+          Channels: configuration/sections/channels.md
       - Secrets: configuration/secrets.md
       - Example: configuration/example.md
   - Changelog:
