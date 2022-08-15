@@ -6,9 +6,8 @@ site_description: >-
   Script Based Alerting Manager
 
 # Repository
-repo_name: Documentation
-repo_url: https://github.com/balerter/site
-edit_uri: edit/main/docs/
+repo_url: https://github.com/balerter/balerter
+edit_uri: ""
 
 theme:
   name: material
@@ -59,14 +58,14 @@ nav:
   - Configuration:
       - about: configuration/about.md
       - top level sections:
-          root values: configuration/sections/root.md
-          scripts: configuration/sections/scripts.md
-          datasources: configuration/sections/datasources.md
-          channels: configuration/sections/channels.md
-          upload storages: configuration/sections/storages-upload.md
-          core storages: configuration/sections/storages-core.md
-          api: configuration/sections/api.md
-          system: configuration/sections/system.md
+          - root values: configuration/sections/root.md
+          - scripts: configuration/sections/scripts.md
+          - datasources: configuration/sections/datasources.md
+          - channels: configuration/sections/channels.md
+          - upload storages: configuration/sections/storages-upload.md
+          - core storages: configuration/sections/storages-core.md
+          - api: configuration/sections/api.md
+          - system: configuration/sections/system.md
       - secrets: configuration/secrets.md
       - example: configuration/example.md
   - Core modules:

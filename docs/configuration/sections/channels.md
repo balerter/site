@@ -12,6 +12,7 @@ Supported channels:
 - [alertmanager](#alertmanager)
 - [alertmanager receiver](#alertmanager-receiver)
 - [twilio voice](#twilio-voice)
+- [log](#log)
 
 ## Slack
 
@@ -59,6 +60,8 @@ Slack channel
 ### ignore
 
 bool
+
+> Default: false
 
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
@@ -140,6 +143,8 @@ If `auth` section is defined, it will use for authentication
 ### ignore
 
 bool
+
+> Default: false
 
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
@@ -255,6 +260,8 @@ priority: 'INFO|LOCAL0'
 
 bool
 
+> Default: false
+
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
 
@@ -307,6 +314,8 @@ Path to images (use as notification icons)
 ### ignore
 
 bool
+
+> Default: false
 
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
@@ -414,6 +423,8 @@ timeout in seconds. By default - 10 sec.
 
 bool
 
+> Default: false
+
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
 
@@ -462,6 +473,8 @@ Channel ID
 ### ignore
 
 bool
+
+> Default: false
 
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
@@ -577,7 +590,11 @@ Timeout in milliseconds
 
 String=String pairs for set HTTP request headers
 
-### ignore (bool)
+### ignore
+
+bool
+
+> Default: false
 
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
@@ -621,6 +638,8 @@ See `webhook settings`
 
 bool
 
+> Default: false
+
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
 
@@ -662,6 +681,8 @@ See `webhook settings`
 ### ignore
 
 bool
+
+> Default: false
 
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
@@ -744,6 +765,8 @@ If this option is empty, alert text will be placed as TwiML template
 
 bool
 
+> Default: false
+
 If this option is True, this channel will be ignored by default.
 This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
 
@@ -754,3 +777,35 @@ int
 > Default: 30000 (30s)
 
 HTTP request timeout, milliseconds
+
+## log
+
+Log channel allows you to print your alerts to the console with Info level
+
+=== "HCL"
+    ```tf
+    log "log1" {
+      ignore = false
+    }
+    ```
+=== "YAML"
+    ```yaml
+    log:
+    - name: lg1
+      ignore: false
+    ```
+
+### name
+
+string
+
+> Required, Unique
+
+### ignore
+
+bool
+
+> Default: false
+
+If this option is True, this channel will be ignored by default.
+This option will be ignored if you explicitly define the channel in your script meta-tags or alert options
