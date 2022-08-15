@@ -1,11 +1,8 @@
-## v0.10.1 (2022-08-15)
+## v0.10.0 (2022-08-15)
 
-- add `log` [channel](/configuration/sections/channels#log)
-
-## v0.10.0 (2022-08-12)
-
-- add [Core API](/core-api)
+- add [Core API](/core-api/about)
 - add colors marks to slack messages
+- add `log` [channel](/configuration/sections/channels#log)
 
 ## v0.9.4 (2022-05-26)
 
