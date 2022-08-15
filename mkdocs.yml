@@ -25,6 +25,9 @@ extra:
       link: https://github.com/balerter/balerter
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/balerter/balerter
+  analytics:
+    provider: google
+    property: UA-158205152-1
 
 markdown_extensions:
   - attr_list
