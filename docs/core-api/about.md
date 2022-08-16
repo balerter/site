@@ -4,8 +4,8 @@ It's allows you to use core modules from your scripts, written and running outsi
 
 Libraries:
 
-- [go](https://github.com/balerter/core-api-go)
-- [python](https://github.com/balerter/core-api-python)
+- [go](https://github.com/balerter/coreapi-go)
+- [python](https://github.com/balerter/coreapi-python)
 
 Feel for free for contributions for these or new libraries!
 
